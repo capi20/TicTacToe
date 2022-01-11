@@ -6,7 +6,7 @@ import './styles/root.scss'
 function App() {
   return (
     <div className="app">
-      <h1>Hello world</h1>
+      <h1>TIC TAC TOE</h1>
       <Board/>
     </div>
   );
