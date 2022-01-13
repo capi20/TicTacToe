@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Square({value, clicked}) {
+function Square({value, clicked, isWinningSquare}) {
     return (
-        <button type="button" className="square" onClick={clicked}>{value}</button>
+        <button type="button" onClick={clicked} 
+            className={`square ${isWinningSquare ? 'winning' : ''} ${value === 'X' ? 'text-green' : 'text-orange'}`}>
+            {value}
+        </button>
     )
 }
 
